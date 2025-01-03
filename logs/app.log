@@ -1,0 +1,534 @@
+2024-12-30 12:40:04  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 12:40:04  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 12:40:04  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 12:40:05  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 12:40:05  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 12:40:05  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 12:40:06  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 12:40:06  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6fbf5db2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 12:40:06  INFO  o.example.hibernateUt3.service.Test - [Event{id=1, name='Carrera', timetable=2024-12-29T22:00, price=29.99, description='Carrera de motos en circuito cerrado'}]
+2024-12-30 12:50:38  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 12:50:38  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 12:50:38  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 12:50:39  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 12:50:39  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 12:50:39  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 12:50:40  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 12:50:40  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 12:50:40  INFO  o.example.hibernateUt3.service.Test - [Entertainer{id=1, nationalId='45689216D', name='Fotito', costume=Costume{id=1, character='Gato', price=12.5}}]
+2024-12-30 12:54:21  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 12:54:21  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 12:54:21  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 12:54:21  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 12:54:21  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 12:54:21  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 12:54:23  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 12:54:23  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 12:54:23  INFO  o.example.hibernateUt3.service.Test - Entertainer{id=2, nationalId='53478079c', name='Felipe', costume=null}
+2024-12-30 12:57:54  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 12:57:54  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 12:57:54  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 12:57:55  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 12:57:55  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 12:57:55  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 12:57:56  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 12:57:56  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 12:57:56  INFO  o.example.hibernateUt3.service.Test - Entertainer{id=3, nationalId='2', name='2', costume=null}
+2024-12-30 12:59:04  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 12:59:04  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 12:59:04  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 12:59:05  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 12:59:05  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 12:59:05  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 12:59:06  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 12:59:06  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 12:59:06  INFO  o.example.hibernateUt3.service.Test - Entertainer{id=4, nationalId='36478979s', name='Juan', costume=null}
+2024-12-30 13:03:32  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 13:03:32  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 13:03:32  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 13:03:32  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 13:03:32  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 13:03:32  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 13:03:33  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 13:03:33  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 13:03:33  INFO  o.example.hibernateUt3.service.Test - Entertainer{id=5, nationalId='23456789d', name='Manuel', costume=null}
+2024-12-30 13:04:12  INFO  o.example.hibernateUt3.service.Test - Costume{id=2, character='Mickey Mouse', price=23.0}
+2024-12-30 13:04:49  INFO  o.example.hibernateUt3.service.Test - Host{id=2, nationalId='', name='Felisa', surname='Sanchez', year=2021, hostEvents=[]}
+2024-12-30 13:06:04  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 13:06:04  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 13:06:04  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 13:06:04  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 13:06:04  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 13:06:04  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 13:06:05  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 13:06:05  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 13:06:05  INFO  o.example.hibernateUt3.service.Test - Host{id=3, nationalId='12333333d', name='Alex', surname='AS', year=2024, hostEvents=[]}
+2024-12-30 16:48:45  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 16:48:45  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 16:48:46  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 16:48:46  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 16:48:46  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 16:48:46  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 16:48:47  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 16:48:47  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75bd28d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 16:48:48  INFO  o.example.hibernateUt3.service.Test - Costume{id=1, character='gato', price=12.0}
+2024-12-30 16:53:49  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 16:53:49  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 16:53:49  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 16:53:49  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 16:53:49  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 16:53:49  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 16:53:51  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 16:53:51  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@129c4d19] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 16:53:51  INFO  o.example.hibernateUt3.service.Test - Costume{id=2, character='perro', price=12.0}
+2024-12-30 16:54:03  INFO  o.example.hibernateUt3.service.Test - Costume{id=3, character='vaca', price=15.0}
+2024-12-30 16:54:24  INFO  o.example.hibernateUt3.service.Test - Entertainer{id=1, nationalId='45678709c', name='entertainer1', costume=null}
+2024-12-30 16:54:45  INFO  o.example.hibernateUt3.service.Test - Entertainer{id=2, nationalId='23456712f', name='entertainer2', costume=null}
+2024-12-30 16:55:10  INFO  o.example.hibernateUt3.service.Test - Host{id=1, nationalId='23436780g', name='host1', surname='a', year=2024, hostEvents=[]}
+2024-12-30 16:55:45  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 16:55:45  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 16:55:45  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 16:55:45  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 16:55:45  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 16:55:45  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 16:55:46  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 16:55:46  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 16:55:47  INFO  o.example.hibernateUt3.service.Test - Host{id=2, nationalId='12345678i', name='host2', surname='b', year=2024, hostEvents=[]}
+2024-12-30 16:56:55  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 16:56:55  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 16:56:55  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 16:56:55  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 16:56:55  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 16:56:55  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 16:56:57  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 16:56:57  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 16:56:57  INFO  o.example.hibernateUt3.service.Test - Host{id=3, nationalId='21324354d', name='host3', surname='c', year=2025, hostEvents=[]}
+2024-12-30 16:57:29  INFO  o.example.hibernateUt3.service.Test - PrivateClient{name='client1', surname='a', nationalId='21435635t'} Client{
+    id=1,
+    province='Madrid',
+    municipality='Pinto',
+    street='Joan',
+}
+2024-12-30 16:57:56  INFO  o.example.hibernateUt3.service.Test - Host{id=4, nationalId='94536948h', name='host4', surname='d', year=2024, hostEvents=[]}
+2024-12-30 16:58:35  INFO  o.example.hibernateUt3.service.Test - CorporateClient{name='company1', contact='c1@example.com', VAT='AS1334252353'} Client{
+    id=2,
+    province='Madrid',
+    municipality='Leganes',
+    street='Laguna',
+}
+2024-12-30 17:06:20  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:06:20  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:06:20  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:06:20  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:06:20  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:06:20  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:06:21  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:06:21  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:06:22  INFO  o.example.hibernateUt3.service.Test - Event{id=1, name='Carrera de coches', timetable=2024-03-12T14:30, price=23.0, description='Carrera publica de coches'}
+2024-12-30 17:07:53  INFO  o.example.hibernateUt3.service.Test - Event{id=2, name='Concurso de belleza', timetable=2024-03-02T15:09, price=21.0, description='Concurso miss belleza'}
+2024-12-30 17:08:21  INFO  o.example.hibernateUt3.service.Test - [Event{id=1, name='Carrera de coches', timetable=2024-03-12T14:30, price=23.0, description='Carrera publica de coches'}, Event{id=2, name='Concurso de belleza', timetable=2024-03-02T15:09, price=21.0, description='Concurso miss belleza'}]
+2024-12-30 17:08:38  INFO  o.example.hibernateUt3.service.Test - [Entertainer{id=1, nationalId='45678709c', name='entertainer1', costume=Costume{id=2, character='perro', price=12.0}}, Entertainer{id=2, nationalId='23456712f', name='entertainer2', costume=Costume{id=1, character='gato', price=12.0}}]
+2024-12-30 17:13:53  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:13:53  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:13:53  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:13:53  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:13:54  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:13:54  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:13:55  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:13:55  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@509a6095] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:13:55  INFO  o.example.hibernateUt3.service.Test - [Host{id=1, nationalId='23436780g', name='host1', surname='a', year=2024, hostEvents=[Event{id=2, name='Concurso de belleza', timetable=2024-03-02T15:09, price=21.0, description='Concurso miss belleza'}, Event{id=1, name='Carrera de coches', timetable=2024-03-12T14:30, price=23.0, description='Carrera publica de coches'}]}, Host{id=2, nationalId='12345678i', name='host2', surname='b', year=2024, hostEvents=[]}, Host{id=3, nationalId='21324354d', name='host3', surname='c', year=2025, hostEvents=[]}, Host{id=4, nationalId='94536948h', name='host4', surname='d', year=2024, hostEvents=[]}]
+2024-12-30 17:17:35  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:17:35  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:17:35  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:17:35  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:17:35  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:17:35  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:17:37  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:17:37  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:17:37  INFO  o.example.hibernateUt3.service.Test - [PrivateClient{name='client1', surname='a', nationalId='21435635t'} Client{
+    id=1,
+    province='Madrid',
+    municipality='Pinto',
+    street='Joan',
+}, CorporateClient{name='company1', contact='c1@example.com', VAT='AS1334252353'} Client{
+    id=2,
+    province='Madrid',
+    municipality='Leganes',
+    street='Laguna',
+}]
+2024-12-30 17:23:29  INFO  o.example.hibernateUt3.service.Test - [PrivateClient{name='client1', surname='a', nationalId='21435635t'} Client{
+    id=1,
+    province='Madrid',
+    municipality='Pinto',
+    street='Joan',
+}, CorporateClient{name='company1', contact='c1@example.com', VAT='AS1334252353'} Client{
+    id=2,
+    province='Madrid',
+    municipality='Leganes',
+    street='Laguna',
+}]
+2024-12-30 17:34:34  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:34:34  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:34:34  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:34:34  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:34:34  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:34:34  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:34:35  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:34:35  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@11810917] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:36:42  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:36:42  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:36:42  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:36:42  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:36:42  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:36:42  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:36:44  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:36:44  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75bd28d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:39:56  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:39:56  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:39:57  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:39:57  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:39:57  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:39:57  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:39:58  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:39:58  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@509a6095] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:39:58  INFO  o.example.hibernateUt3.service.Test - Event{id=3, name='Concierto', timetable=2021-02-03T12:20, price=1.0, description='Concierto de metal'}
+2024-12-30 17:42:16  INFO  o.example.hibernateUt3.service.Test - [Host{id=1, nationalId='23436780g', name='host1', surname='a', year=2024, hostEvents=[Event{id=2, name='Concurso de belleza', timetable=2024-03-02T15:09, price=21.0, description='Concurso miss belleza'}, Event{id=1, name='Carrera de coches', timetable=2024-03-12T14:30, price=23.0, description='Carrera publica de coches'}]}, Host{id=2, nationalId='12345678i', name='host2', surname='b', year=2024, hostEvents=[Event{id=3, name='Concierto', timetable=2021-02-03T12:20, price=1.0, description='Concierto de metal'}]}, Host{id=3, nationalId='21324354d', name='host3', surname='c', year=2025, hostEvents=[]}, Host{id=4, nationalId='94536948h', name='host4', surname='d', year=2024, hostEvents=[]}]
+2024-12-30 17:43:46  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:43:46  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:43:46  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:43:46  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:43:46  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:43:46  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:43:48  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:43:48  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:45:39  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:45:39  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:45:39  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:45:40  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:45:40  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:45:40  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:45:41  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:45:41  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@509a6095] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:45:41  INFO  o.example.hibernateUt3.service.Test - [Entertainer{id=2, nationalId='23456712f', name='entertainer2', costume=Costume{id=1, character='gato', price=12.0}}, Entertainer{id=1, nationalId='45678709c', name='entertainer1', costume=Costume{id=2, character='perro', price=12.0}}]
+2024-12-30 17:55:59  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:55:59  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:55:59  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:55:59  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:55:59  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:55:59  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:56:00  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:56:00  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:56:59  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 17:56:59  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 17:57:00  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 17:57:00  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 17:57:00  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 17:57:00  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 17:57:01  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 17:57:01  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 17:57:02  INFO  o.example.hibernateUt3.service.Test - [Event{id=1, name='Carrera de coches', timetable=2024-03-12T14:30, price=23.0, description='Carrera publica de coches'}, Event{id=2, name='Concurso de belleza', timetable=2024-03-02T15:09, price=21.0, description='Concurso miss belleza'}]
+2024-12-30 18:00:30  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 18:00:30  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 18:00:30  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 18:00:30  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 18:00:30  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 18:00:30  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 18:00:31  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 18:00:31  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75bd28d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 18:00:31  INFO  o.example.hibernateUt3.service.Test - PrivateClient{name='Paco', surname='Perez', nationalId='12329123e'} Client{
+    id=3,
+    province='Salamanca',
+    municipality='Bejar',
+    street='Las Rosas',
+}
+2024-12-30 18:01:37  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 18:01:37  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 18:01:37  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 18:01:38  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 18:01:38  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 18:01:38  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 18:01:39  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 18:01:39  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@509a6095] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 18:29:12  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 18:29:12  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 18:29:13  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 18:29:13  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 18:29:13  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 18:29:13  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 18:29:14  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 18:29:14  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 18:30:38  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 18:30:38  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 18:30:39  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 18:30:39  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 18:30:39  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 18:30:39  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 18:30:40  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 18:30:40  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75bd28d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 18:30:40  INFO  o.example.hibernateUt3.service.Test - [Costume{id=3, character='vaca', price=15.0}, Costume{id=1, character='gato', price=12.0}, Costume{id=2, character='perro', price=12.0}]
+2024-12-30 18:34:13  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 18:34:13  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 18:34:13  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 18:34:13  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 18:34:13  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 18:34:13  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 18:34:14  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 18:34:14  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 18:34:15  INFO  o.example.hibernateUt3.service.Test - Costume{id=3, character='vaca', price=15.0}
+Costume{id=2, character='perro', price=12.0}
+2024-12-30 19:00:51  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 19:00:52  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 19:00:52  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 19:00:52  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 19:00:52  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 19:00:52  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 19:00:53  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 19:00:53  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 19:01:47  INFO  o.example.hibernateUt3.service.Test - [PrivateClient{name='Paco', surname='Perez', nationalId='12329123e'} Client{
+    id=3,
+    province='Salamanca',
+    municipality='Bejar',
+    street='Las Rosas',
+}, PrivateClient{name='client1', surname='a', nationalId='21435635t'} Client{
+    id=1,
+    province='Madrid',
+    municipality='Pinto',
+    street='Joan',
+}]
+2024-12-30 19:02:23  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 19:02:23  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 19:02:23  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 19:02:23  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 19:02:23  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 19:02:23  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 19:02:24  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 19:02:24  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@509a6095] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 19:02:25  INFO  o.example.hibernateUt3.service.Test - [CorporateClient{name='company1', contact='c1@example.com', VAT='AS1334252353'} Client{
+    id=2,
+    province='Madrid',
+    municipality='Leganes',
+    street='Laguna',
+}]
+2024-12-30 19:33:18  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2024-12-30 19:33:18  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-30 19:33:18  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2024-12-30 19:33:19  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-12-30 19:33:19  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-30 19:33:19  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2024-12-30 19:33:20  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30 19:33:20  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@129c4d19] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-12-30 19:33:20  INFO  o.example.hibernateUt3.service.Test - Costume{id=4, character='Pepito', price=12.0}
+2024-12-30 19:33:38  INFO  o.example.hibernateUt3.service.Test - [PrivateClient{name='Paco', surname='Perez', nationalId='12329123e'} Client{
+    id=3,
+    province='Salamanca',
+    municipality='Bejar',
+    street='Las Rosas',
+}, PrivateClient{name='client1', surname='a', nationalId='21435635t'} Client{
+    id=1,
+    province='Madrid',
+    municipality='Pinto',
+    street='Joan',
+}]
