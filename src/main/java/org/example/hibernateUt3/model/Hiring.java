@@ -27,7 +27,6 @@ public class Hiring implements Serializable {
     public Hiring() {
     }
 
-
     public Long getId() {
         return id;
     }

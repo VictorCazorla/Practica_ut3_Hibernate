@@ -22,7 +22,7 @@ public class Test {
         Scanner scanner = new Scanner(System.in);
         Test test = new Test();
 
-        //---------------- REQUIRED DAOS ----------------//
+        //---------------- REQUIRED DAOs ----------------//
 
         CostumeDao costumeDao = new CostumeDao();
         EntertainerDao entertainerDao = new EntertainerDao();
@@ -32,26 +32,24 @@ public class Test {
         HiringDao hiringDao = new HiringDao();
 
         while (true) {
-            System.out.println("\n---------------- MENU ----------------");
+            System.out.println("\n---------------- Menu ----------------" );
             System.out.println("1. Create a Costume");
             System.out.println("2. Create an Entertainer");
             System.out.println("3. Create a Host");
             System.out.println("4. Create a Private Client");
             System.out.println("5. Create a Corporate Client");
             System.out.println("6. Create an Event");
-            System.out.println("7. Assign a Costume to an Entertainer");
-            System.out.println("8. Assign an Entertainer to an Event");
-            System.out.println("9. Assign a Host to an Event");
-            System.out.println("10. Assign an Event to a Client");
-            System.out.println("11. Show all Events");
-            System.out.println("12. Show all Entertainers");
-            System.out.println("13. Show all Hosts");
-            System.out.println("14. Show all Clients");
-            System.out.println("15. Show all Entertainers in an Event");
-            System.out.println("16. Show all Events of a Host");
-            System.out.println("17. Show the two most expensive Costumes");
-            System.out.println("18. Show clients who hired an event in a province");
-            System.out.println("19. Exit");
+            System.out.println("7. Assign an Entertainer to an Event");
+            System.out.println("8. Create Hiring");
+            System.out.println("9. Show all Events");
+            System.out.println("10. Show all Entertainers");
+            System.out.println("11. Show all Hosts");
+            System.out.println("12. Show all Clients");
+            System.out.println("13. Show all Entertainers in an Event");
+            System.out.println("14. Show all Events of a Host");
+            System.out.println("15. Show the two most expensive Costumes");
+            System.out.println("16. Show clients who hired an event in a province");
+            System.out.println("17. Exit");
             System.out.print("Select an option: ");
 
             int option = scanner.nextInt();
@@ -62,7 +60,7 @@ public class Test {
                     test.createCostume(costumeDao);
                     break;
                 case 2:
-                    test.createEntertainer(entertainerDao);
+                    test.createEntertainer(entertainerDao,costumeDao);
                     break;
                 case 3:
                     test.createHost(hostDao);
@@ -74,69 +72,39 @@ public class Test {
                     test.createCorpClient(clientDao);
                     break;
                 case 6:
-                    test.createEvent(eventDao);
+                    test.createEvent(eventDao,hostDao);
                     break;
                 case 7:
-                    System.out.print("Enter the Entertainer ID: ");
-                    Long entertainerId = scanner.nextLong();
-                    System.out.print("Enter the Costume ID: ");
-                    Long costumeId = scanner.nextLong();
-                    test.assignCostume(entertainerDao, costumeDao, entertainerId, costumeId);
+                    test.assignEnertainer(entertainerDao, eventDao);
                     break;
                 case 8:
-                    System.out.print("Enter the Entertainer ID for Event: ");
-                    Long entertainerId2 = scanner.nextLong();
-                    System.out.print("Enter the Event ID: ");
-                    Long eventId = scanner.nextLong();
-                    test.assignEnertainer(entertainerDao, eventDao, entertainerId2, eventId);
+                    test.createHiring(hiringDao, clientDao, eventDao);
                     break;
                 case 9:
-                    System.out.print("Enter the Host ID: ");
-                    Long hostId = scanner.nextLong();
-                    System.out.print("Enter the Event ID for Host: ");
-                    Long eventId2 = scanner.nextLong();
-                    test.assignHost(hostDao, eventDao, hostId, eventId2);
-                    break;
-                case 10:
-                    System.out.print("Enter the Client ID: ");
-                    Long clientId = scanner.nextLong();
-                    System.out.print("Enter the Event ID for Client: ");
-                    Long eventId3 = scanner.nextLong();
-                    System.out.print("Enter the Event City: ");
-                    String eventCity = scanner.next();
-                    test.createHiring(hiringDao, clientDao, eventDao, clientId, eventId3, eventCity);
-                    break;
-                case 11:
                     test.getAllEvents(eventDao);
                     break;
-                case 12:
+                case 10:
                     test.getAllEntertainers(entertainerDao);
                     break;
-                case 13:
+                case 11:
                     test.getAllHosts(hostDao);
                     break;
-                case 14:
+                case 12:
                     test.getAllClients(clientDao);
                     break;
+                case 13:
+                    test.getEventEntertainers(eventDao);
+                    break;
+                case 14:
+                    test.getHostEvents(hostDao);
+                    break;
                 case 15:
-                    System.out.println("Enter the Event name: ");
-                    String eventName = scanner.nextLine();
-                    test.getEventEntertainers(eventName, eventDao);
-                    break;
-                case 16:
-                    System.out.println("Enter the Host national ID: ");
-                    String hostName = scanner.nextLine();
-                    test.getHostEvents(hostName, hostDao);
-                    break;
-                case 17:
                     test.getTwoMostExpensiveCustomes(costumeDao);
                     break;
-                case 18:
-                    System.out.println("Enter the province name: ");
-                    String provinceName = scanner.nextLine();
-                    test.getEventProvinceClients(provinceName, hiringDao);
+                case 16:
+                    test.getEventCityClients(hiringDao);
                     break;
-                case 19:
+                case 17:
                     System.out.println("Exiting the program...");
                     scanner.close();
                     System.exit(0);
@@ -151,140 +119,162 @@ public class Test {
 
     // Costume creation method
     private void createCostume(CostumeDao costumeDao) {
-        Costume costume = new Costume();
+        try {
+            Costume costume = new Costume();
 
-        System.out.print("Enter the character: ");
-        String character = scanner.nextLine();
-        costume.setCharacter(character);
+            System.out.print("Enter the character: ");
+            String character = scanner.nextLine();
+            costume.setCharacter(character);
 
-        System.out.print("Enter the price: ");
-        double price = scanner.nextDouble();
-        scanner.nextLine();
-        costume.setPrice(price);
+            System.out.print("Enter the price: ");
+            double price = scanner.nextDouble();
+            scanner.nextLine();
+            costume.setPrice(price);
 
-        Costume costumeEntity = costumeDao.create(costume);
-        log.info(costumeEntity.toString());
-
+            Costume costumeEntity = costumeDao.create(costume);
+            log.info(costumeEntity.toString());
+        } catch (Exception e) {
+            log.error("An error has ocurred while trying to create a costume.");
+        }
     }
 
     // Entertainer creation method
-    private void createEntertainer(EntertainerDao entertainerDao) {
+    private void createEntertainer(EntertainerDao entertainerDao, CostumeDao costumeDao) {
 
-        Entertainer entertainer = new Entertainer();
+        try{
+            Entertainer entertainer = new Entertainer();
 
-        System.out.print("Enter the National ID: ");
-        String nationalId = scanner.nextLine();
-        entertainer.setNationalId(nationalId);
+            System.out.print("Enter the National ID: ");
+            String nationalId = scanner.nextLine();
+            entertainer.setNationalId(nationalId);
 
-        System.out.print("Enter the name: ");
-        String name = scanner.nextLine();
-        entertainer.setName(name);
+            System.out.print("Enter the name: ");
+            String name = scanner.nextLine();
+            entertainer.setName(name);
 
-        System.out.print("Enter the surname: ");
-        String surname = scanner.nextLine();
-        entertainer.setSurname(surname);
+            System.out.print("Enter the surname: ");
+            String surname = scanner.nextLine();
+            entertainer.setSurname(surname);
 
-        Entertainer entertainerEntity = entertainerDao.create(entertainer);
-        log.info(entertainerEntity.toString());
+            System.out.println("Enter the costume character: ");
+            String costumeCharacter=scanner.nextLine();
+            Costume costume=costumeDao.getByCharacter(costumeCharacter);
+            entertainer.setCostume(costume);
 
+            Entertainer entertainerEntity = entertainerDao.create(entertainer);
+            log.info(entertainerEntity.toString());
+        } catch (Exception e) {
+            log.error("An error has ocurred while trying to create an entertainer");
+        }
     }
 
     // Host creation method
     private void createHost(HostDao hostDao) {
 
-        Host host = new Host();
+        try {
+            Host host = new Host();
 
-        System.out.print("Enter the National ID: ");
-        String nationalId = scanner.nextLine();
-        host.setNationalId(nationalId);
+            System.out.print("Enter the National ID: ");
+            String nationalId = scanner.nextLine();
+            host.setNationalId(nationalId);
 
-        System.out.print("Enter the name: ");
-        String name = scanner.nextLine();
-        host.setName(name);
+            System.out.print("Enter the name: ");
+            String name = scanner.nextLine();
+            host.setName(name);
 
-        System.out.print("Enter the surname: ");
-        String surname = scanner.nextLine();
-        host.setSurname(surname);
+            System.out.print("Enter the surname: ");
+            String surname = scanner.nextLine();
+            host.setSurname(surname);
 
-        System.out.print("Enter the year: ");
-        int year = scanner.nextInt();scanner.nextLine();
-        host.setYear(year);
+            System.out.print("Enter the year: ");
+            int year = scanner.nextInt();
+            scanner.nextLine();
+            host.setYear(year);
 
-        Host hostEntity = hostDao.create(host);
-        log.info(hostEntity.toString());
-
+            Host hostEntity = hostDao.create(host);
+            log.info(hostEntity.toString());
+        } catch (Exception e) {
+            log.error("An error has ocurred while trying to create a host");
+        }
     }
 
     // PrivateClient creation method
     private void createPrivClient(ClientDao clientDao) {
 
-        PrivateClient privateClient = new PrivateClient();
+        try {
+            PrivateClient privateClient = new PrivateClient();
 
-        System.out.print("Enter the name: ");
-        String name = scanner.nextLine();
-        privateClient.setName(name);
+            System.out.print("Enter the name: ");
+            String name = scanner.nextLine();
+            privateClient.setName(name);
 
-        System.out.print("Enter the surname: ");
-        String surname = scanner.nextLine();
-        privateClient.setSurname(surname);
+            System.out.print("Enter the surname: ");
+            String surname = scanner.nextLine();
+            privateClient.setSurname(surname);
 
-        System.out.print("Enter the National ID: ");
-        String nationalId = scanner.nextLine();
-        privateClient.setNationalId(nationalId);
+            System.out.print("Enter the National ID: ");
+            String nationalId = scanner.nextLine();
+            privateClient.setNationalId(nationalId);
 
-        System.out.print("Enter the province: ");
-        String province = scanner.nextLine();
-        privateClient.setProvince(province);
+            System.out.print("Enter the province: ");
+            String province = scanner.nextLine();
+            privateClient.setProvince(province);
 
-        System.out.print("Enter the municipality: ");
-        String municipality = scanner.nextLine();
-        privateClient.setMunicipality(municipality);
+            System.out.print("Enter the municipality: ");
+            String municipality = scanner.nextLine();
+            privateClient.setMunicipality(municipality);
 
-        System.out.print("Enter the street: ");
-        String street = scanner.nextLine();
-        privateClient.setStreet(street);
+            System.out.print("Enter the street: ");
+            String street = scanner.nextLine();
+            privateClient.setStreet(street);
 
-        PrivateClient privClientEntity = (PrivateClient) clientDao.create(privateClient);
-        log.info(privClientEntity.toString());
-
+            PrivateClient privClientEntity = (PrivateClient) clientDao.create(privateClient);
+            log.info(privClientEntity.toString());
+        } catch (Exception e) {
+            log.error("An error has ocurred while trying to create a private client");
+        }
     }
 
     // CorporateClient creation method
     private void createCorpClient(ClientDao clientDao) {
 
-        CorporateClient corporateClient = new CorporateClient();
+        try {
+            CorporateClient corporateClient = new CorporateClient();
 
-        System.out.print("Enter the company name: ");
-        String name = scanner.nextLine();
-        corporateClient.setName(name);
+            System.out.print("Enter the company name: ");
+            String name = scanner.nextLine();
+            corporateClient.setName(name);
 
-        System.out.print("Enter the contact email: ");
-        String contact = scanner.nextLine();
-        corporateClient.setContact(contact);
+            System.out.print("Enter the contact email: ");
+            String contact = scanner.nextLine();
+            corporateClient.setContact(contact);
 
-        System.out.print("Enter the VAT: ");
-        String vat = scanner.nextLine();
-        corporateClient.setVAT(vat);
+            System.out.print("Enter the VAT: ");
+            String vat = scanner.nextLine();
+            corporateClient.setVAT(vat);
 
-        System.out.print("Enter the province: ");
-        String province = scanner.nextLine();
-        corporateClient.setProvince(province);
+            System.out.print("Enter the province: ");
+            String province = scanner.nextLine();
+            corporateClient.setProvince(province);
 
-        System.out.print("Enter the municipality: ");
-        String municipality = scanner.nextLine();
-        corporateClient.setMunicipality(municipality);
+            System.out.print("Enter the municipality: ");
+            String municipality = scanner.nextLine();
+            corporateClient.setMunicipality(municipality);
 
-        System.out.print("Enter the street: ");
-        String street = scanner.nextLine();
-        corporateClient.setStreet(street);
+            System.out.print("Enter the street: ");
+            String street = scanner.nextLine();
+            corporateClient.setStreet(street);
 
-        CorporateClient corpClientEntity = (CorporateClient) clientDao.create(corporateClient);
-        log.info(corpClientEntity.toString());
-
+            CorporateClient corpClientEntity = (CorporateClient) clientDao.create(corporateClient);
+            log.info(corpClientEntity.toString());
+        } catch (Exception e) {
+            log.error("An error has ocurred while trying to create a corporate client");
+        }
     }
 
     // Event creation method
-    private void createEvent(EventDao eventDao) {
+    private void createEvent(EventDao eventDao, HostDao hostDao) {
+        try{
         Event event = new Event();
 
         System.out.print("Enter the event name: ");
@@ -312,54 +302,64 @@ public class Test {
         scanner.nextLine();
         event.setPrice(price);
 
+        System.out.print("Enter the event Host nationalID:  ");
+        String hostNationalId= scanner.nextLine();
+        Host host = hostDao.getByNationalId(hostNationalId);
+        event.setEventHost(host);
+
         Event eventEntity = eventDao.create(event);
         log.info(eventEntity.toString());
-
+        } catch (Exception e) {
+            log.error("An error has ocurred while trying to create an event");
+        }
     }
 
 
     //---------------- Methods for Associating Entities ----------------//
 
-    // Assign a Costume to an Entertainer
-    public void assignCostume(EntertainerDao entertainerDao, CostumeDao costumeDao, Long entertainerId, Long costumeId) {
-        Entertainer entertainer = entertainerDao.getById(entertainerId);
-        Costume costumeToAssign = costumeDao.getById(costumeId);
-
-        entertainer.setCostume(costumeToAssign);
-        entertainerDao.update(entertainer);
-    }
-
     // Assign an Entertainer to an Event
-    public void assignEnertainer(EntertainerDao entertainerDao, EventDao eventDao, Long entertainerId, Long eventId){
-        Entertainer entertToAssign= entertainerDao.getById(entertainerId);
-        Event event=eventDao.getById(eventId);
+    public void assignEnertainer(EntertainerDao entertainerDao, EventDao eventDao){
 
-        event.addEntertainer(entertToAssign);
-        eventDao.update(event);
-    }
+        try {
+            System.out.print("Enter the Entertainer National ID for Event: ");
+            String entertainerNationalId = scanner.nextLine();
+            System.out.print("Enter the Event ID: ");
+            Long eventId = scanner.nextLong();
+            Event event = eventDao.getById(eventId);
+            Entertainer entertToAssign = entertainerDao.getByNationalId(entertainerNationalId);
 
-    // Assign a Host to an Event
-    public void assignHost(HostDao hostDao, EventDao eventDao, Long hostId, Long eventId){
-        Host hostToAssign=hostDao.getById(hostId);
-        Event event =eventDao.getById(eventId);
-
-        event.setEventHost(hostToAssign);
-        eventDao.update(event);
+            event.addEntertainer(entertToAssign);
+            eventDao.update(event);
+            System.out.println("Event entertainer :" + event.getEventEntertainers());
+        }catch (Exception e) {
+            log.error("An error has ocurred while trying to assign an entertainer to an event");
+        }
     }
 
     // Create a hiring involving an Event and a Client
-    private void createHiring(HiringDao hiringDao, ClientDao clientDao, EventDao eventDao, Long clientId, Long eventId, String eventCity) {
-        Hiring hiring = new Hiring();
-        hiringDao.create(hiring);
+    private void createHiring(HiringDao hiringDao, ClientDao clientDao, EventDao eventDao) {
+        try {
+            Hiring hiring = new Hiring();
+            hiringDao.create(hiring);
 
-        Client client = clientDao.getById(clientId);
-        Event event = eventDao.getById(eventId);
+            System.out.print("Enter the Client ID: ");
+            Long clientId = scanner.nextLong();
+            System.out.print("Enter the Event ID for Client: ");
+            Long eventId = scanner.nextLong();
+            System.out.print("Enter the Event City: ");
+            String eventCity = scanner.next();
 
-        hiring.setClient(client);
-        hiring.setEvent(event);
-        hiring.setEventCity(eventCity);
+            Client client = clientDao.getById(clientId);
+            Event event = eventDao.getById(eventId);
 
-        hiringDao.update(hiring);
+            hiring.setClient(client);
+            hiring.setEvent(event);
+            hiring.setEventCity(eventCity);
+
+            hiringDao.update(hiring);
+        }catch (Exception e) {
+            log.error("An error has ocurred while trying to create a hiring");
+        }
     }
 
 
@@ -367,51 +367,89 @@ public class Test {
 
     // Display all Events
     private void getAllEvents(EventDao eventDao){
-        List<Event> eventList = eventDao.getAll();
-        log.info(eventList.toString());
+        try {
+            List<Event> eventList = eventDao.getAll();
+            log.info(eventList.toString());
+        } catch (Exception e) {
+            log.error("An error has ocurred while trying to return all events from database.");
+        }
     }
 
     // Display all Entertainers
     private void getAllEntertainers(EntertainerDao entertainerDao){
-        List<Entertainer> entertainerList = entertainerDao.getAll();
-        log.info(entertainerList.toString());
+        try {
+            List<Entertainer> entertainerList = entertainerDao.getAll();
+            log.info(entertainerList.toString());
+        }catch (Exception e) {
+            log.error("An error has ocurred while trying to return all entertainers from database.");
+        }
     }
 
     // Display all Hosts
     private void getAllHosts(HostDao hostDao){
-        List<Host> hostList = hostDao.getAll();
-        log.info(hostList.toString());
+        try {
+            List<Host> hostList = hostDao.getAll();
+            log.info(hostList.toString());
+        }catch (Exception e) {
+            log.error("An error has ocurred while trying to return all hosts from database.");
+        }
     }
 
     // Display all Clients
     private void getAllClients(ClientDao clientDao){
-        List<Client> clientList = clientDao.getAll();
-        log.info(clientList.toString());
+        try {
+            List<Client> clientList = clientDao.getAll();
+            log.info(clientList.toString());
+        }catch (Exception e) {
+        log.error("An error has ocurred while trying to return all clients from database.");
+    }
     }
 
     // Display all Entertainers of an Event
-    private void getEventEntertainers(String eventName, EventDao eventDao){
-        Set<Entertainer> entertainers = eventDao.getEventEntertainers(eventName);
-        log.info(entertainers.toString());
+    private void getEventEntertainers(EventDao eventDao){
+        try{
+            System.out.println("Enter the Event name: ");
+            String eventName = scanner.nextLine();
+            Set<Entertainer> entertainers = eventDao.getEventEntertainers(eventName);
+            log.info(entertainers.toString());
+        } catch (Exception e) {
+            log.error("An error has ocurred while trying to return all event entertainers from database.");
+        }
     }
 
     // Display all Events of a Host
-    private void getHostEvents(String hostName, HostDao hostDao){
-        Set<Event> events = hostDao.getHostEventsById(hostName);
-        log.info(events.toString());
+    private void getHostEvents(HostDao hostDao){
+        try{
+            System.out.println("Enter the Host national ID: ");
+            String hostName = scanner.nextLine();
+            Set<Event> events = hostDao.getHostEventsById(hostName);
+            log.info(events.toString());
+        } catch (Exception e) {
+            log.error("An error has ocurred while trying to return all host events from database.");
+        }
     }
 
     // Display the two most expensive Costumes
     private void getTwoMostExpensiveCustomes(CostumeDao costumeDao){
-        List<Costume> costumes = costumeDao.getTwoMostExpesiveCostumes();
-        Costume costume1 = costumes.get(0);
-        Costume costume2 = costumes.get(1);
-        log.info(costume1.toString() + "\n" + costume2.toString());
+        try {
+            List<Costume> costumes = costumeDao.getTwoMostExpesiveCostumes();
+            Costume costume1 = costumes.get(0);
+            Costume costume2 = costumes.get(1);
+            log.info(costume1.toString() + "\n" + costume2.toString());
+        }catch (Exception e) {
+            log.error("An error has ocurred while trying to return the two most expensive customes from database.");
+        }
     }
 
     // Display all Clients who hired an event in a specific province
-    private void getEventProvinceClients(String provinceName, HiringDao hiringDao){
-        List<Client> clientList = hiringDao.getByProvince(provinceName);
-        log.info(clientList.toString());
+    private void getEventCityClients(HiringDao hiringDao){
+        try {
+            System.out.println("Enter the province name: ");
+            String provinceName = scanner.nextLine();
+            List<Client> clientList = hiringDao.getByProvince(provinceName);
+            log.info(clientList.toString());
+        }catch (Exception e) {
+            log.error("An error has ocurred while trying to return all clients by event city from database.");
+        }
     }
 }

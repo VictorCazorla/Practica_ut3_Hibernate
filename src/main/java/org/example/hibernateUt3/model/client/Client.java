@@ -7,6 +7,15 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+
+/**
+ * I've chosen the JOINED inheritance strategy because it eliminates empty fields in the tables by combining the parent and child tables.
+ * Additionally, I believe this strategy makes the database client structure clearer and more scalable.
+ * If new client subtypes need to be added in the future,it can be done easily, as each subtype has its own table,
+ * preventing the main "Client" table from becoming full of useless fields (unlike other strategies like single-table inheritance).
+ *
+ */
+
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Client implements Serializable {

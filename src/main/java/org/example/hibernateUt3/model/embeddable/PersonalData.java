@@ -42,4 +42,13 @@ public class PersonalData {
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
+    @Override
+    public String toString() {
+        return "PersonalData{" +
+                "name='" + name + '\'' +
+                ", nationalId='" + nationalId + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
 }
