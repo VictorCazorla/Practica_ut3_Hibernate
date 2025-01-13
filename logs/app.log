@@ -758,3 +758,57 @@ Costume{id=2, character='perro', price=15.0}
 }]
 2025-01-08 10:56:20  INFO  o.example.hibernateUt3.service.Test - Costume{id=3, character='mickey', price=100.0}
 Costume{id=2, character='perro', price=15.0}
+2025-01-09 09:48:48  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2025-01-09 09:48:48  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-09 09:48:48  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-01-09 09:48:48  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-01-09 09:48:48  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-09 09:48:48  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-01-09 09:48:50  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-09 09:48:50  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@57cabdc3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-01-09 09:48:50  WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2025-01-09 09:48:50  ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry '33333333x' for key 'UKcs3e7q4b9xg0jmywi7ti3ki2r'
+2025-01-09 09:48:50  ERROR o.example.hibernateUt3.service.Test - An error has ocurred while trying to create a private client
+2025-01-09 09:50:31  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2025-01-09 09:50:31  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-09 09:50:31  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-01-09 09:50:31  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-01-09 09:50:31  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-09 09:50:31  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-01-09 09:50:33  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-09 09:50:33  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75bd28d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-01-09 09:50:33  WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2025-01-09 09:50:33  ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry '33333333x' for key 'UKcs3e7q4b9xg0jmywi7ti3ki2r'
+2025-01-09 09:50:33  ERROR o.example.hibernateUt3.service.Test - An error has ocurred while trying to create a private client
+2025-01-09 09:52:15  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.1.Final
+2025-01-09 09:52:15  INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-09 09:52:15  WARN  o.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-01-09 09:52:16  WARN  org.hibernate.dialect.Dialect - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-01-09 09:52:16  WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-09 09:52:16  INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/practica_ad_ut3]
+	Database driver: com.mysql.cj.jdbc.Driver
+	Database version: 5.5.5
+	Autocommit mode: false
+	Isolation level: undefined/unknown
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-01-09 09:52:17  INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-09 09:52:17  INFO  o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@75bd28d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-01-09 09:52:17  WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2025-01-09 09:52:17  ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry '33333333x' for key 'UKcs3e7q4b9xg0jmywi7ti3ki2r'
+2025-01-09 09:52:18  ERROR o.example.hibernateUt3.service.Test - An error has ocurred while trying to create a private clientorg.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl@7e94e331 is closed
